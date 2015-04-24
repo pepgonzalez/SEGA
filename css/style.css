@@ -442,10 +442,13 @@ img{
         height: 100%;
     }
 
-
     .menu__root:checked ~ nav{
         display: block;
     }    
+
+    .shadow{
+    box-shadow: none;
+}
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
