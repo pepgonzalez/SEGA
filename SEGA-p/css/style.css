@@ -1,0 +1,155 @@
+/*---------------------------------------------------
+	FUENTES E ICONOS
+----------------------------------------------------*/
+@font-face {
+	font-family: 'sega';
+	src:url('../fonts/sega.eot?32zgc8');
+	src:url('../fonts/sega.eot?#iefix32zgc8') format('embedded-opentype'),
+		url('../fonts/sega.woff?32zgc8') format('woff'),
+		url('../fonts/sega.ttf?32zgc8') format('truetype'),
+		url('../fonts/sega.svg?32zgc8#sega') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'sega';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+	content: "\e601";
+}
+
+/*---------------------------------------------------
+	GENERALES
+----------------------------------------------------*/
+
+html{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+	background-color: #303030;
+}
+
+/*---------------------------------------------------
+	NAVEGACION
+----------------------------------------------------*/
+.nav{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: #242858;
+	height: 8vh;
+	box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+}
+	.nav__root{
+		display: none;
+	}
+		.nav__root:checked ~ .nav__menu{
+			display: block;
+		}
+	.nav__label{
+		position: absolute;
+		text-align: center;
+		color: white;
+		width: 7vh;
+		height: 7vh;
+		margin: 0.5vh;
+	}
+.ic{
+	font-size: 2.5rem;
+	height: 100%;
+	color: #212121;
+}
+	.nav__menu{
+		display: none;
+		position: absolute;
+		top: 100%;
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		width: 80%;
+		box-shadow: 0px 6px 15px rgba(0,0,0,0.5);
+		height: 92vh;
+		background-color: #424242;
+	}
+
+	@media screen and (min-width: 720px){
+		.nav__menu{
+			width: 20%;
+		}
+	}
+		.nav__menu__item{
+			text-align: center;
+			padding: 0.5rem 0;
+			border-bottom: solid lightgray 0.5px;
+			height: 10%;
+			margin: 0px;
+			padding: 0px;
+			width: 100%;
+			border-top: solid 0.5px rgba(125,125,125,0.4);
+			display: table;
+		}	
+			.nav__menu__item:hover{
+				border-left: solid 4px #242858;
+			}
+		.nav__menu__item a{
+			display: table-cell;
+			text-decoration: none;
+			color: #212121;
+			width: 100%;
+			height: 100%;
+			vertical-align: middle;
+			font-size: 1.2rem;
+			text-align: left;
+			padding-left: 1rem;	
+
+		}
+			.nav__menu__item:hover a{
+				color:#242858;
+				font-size: 1.5rem;
+			}
+		.nav__menu__footer{
+			position: relative;
+			border-top: 1px solid #424242;
+			width: 100%;
+			height: 20%;
+			background-color: #242858;
+		}
+		.nav__menu__footer p{
+			position: absolute;
+			margin: 0px;
+			padding:0px;
+			bottom: 0px;
+			left: 0%;
+			right: 0%;
+			text-align: center;
+			font-size: 0.9rem;
+		}
+		.nav__logo__container{
+			background-color: #424242;
+			height: 30%;
+			width: 100%;
+			padding: 0px;
+			margin: 0px;
+		}
