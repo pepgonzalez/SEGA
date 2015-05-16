@@ -2,7 +2,7 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="es"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 	<title>SEGA | Servicios Generales</title>
@@ -11,42 +11,50 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-	<script src="js/jquery.min.js"></script>
-    
+    <script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+	<link href="css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
-<header> 
 
+<header>
+	<div class="zerogrid">
+	<div class="main-content nomargin"> 
+		<img class="logo" src="img/logo.png" alt="SEGA">
+	</div>
+	</div>
 </header>
+
 <input type="checkbox" id="mr" class="menu__root">
-<label for="mr" class="menu__label"><img src="images/menu.png" style="width:3rem; height:3rem"></label>
-<nav class="nav">
+<label for="mr" class="menu__label"><img src="img/menu.png" style="width:3rem; height:3rem"></label>
+<nav>
 	<ul>
 		<li><a href="index.html">Inicio</a></li>
-		<li><a href="#">Servicios</a></li>
-		<li><a href="#">Clientes</a></li>
-		<li><a href="#">Contacto</a></li>
+		<li><a href="index.html#Servicios">Servicios</a></li>
+		<li><a href="index.html#Clientes">Clientes</a></li>
+		<li><a href="index.html#Contacto">Contacto</a></li>
 	</ul>
 </nav>
+
 <section id="content">
-	<div class="zerogrid">
+	<div class="zerogrid br">
 		<div class="row">
 			<div class="main-content">
 				<div class="row">
 					<div class="col-2-3">
 						<article>
 							<div class="heading">
-								<h2><a href="#">Mantenimiento Preventivo y Correctivo</a></h2>
+								<h2><a href="#">MANTENIMIENTO PREVENTIVO Y CORRECTIVO</a></h2>
 							</div>
 							<div class="content">
-								<img src="images/soldadura.jpg" style="width:580px; height:200px;"/>
+								<img src="img/mant/3.jpg" style="width:580px; height:200px;"/>
 								<div class="heading">
-								<h2><a href="#">Ofrecemos nuestra amplia experiencia en el ramo industrial, apoyando a las empresas a realizar servicios de mantenimiento tales como:</a></h2>
+								<h2><a href="#" style="margin-top:10px;">Ofrecemos nuestra amplia experiencia en el ramo industrial, apoyando a las empresas a realizar servicios de mantenimiento tales como:</a></h2>
 							</div>
 								<ul>
-									<div class="lc icon-reto"></div><li class="list__item">Mantenimiento Preventivo</li>
-									<div class="lc icon-reto"></div><li class="list__item">Mantenimiento Correctivo</li>
-									<div class="lc icon-reto"></div><li class="list__item">Análisis de Fallas</li>
+									<div class="lc icon-reto"></div><li class="list__item">Mantenimiento preventivo</li>
+									<div class="lc icon-reto"></div><li class="list__item">Mantenimiento correctivo</li>
+									<div class="lc icon-reto"></div><li class="list__item">Análisis de fallas.</li>
 									<div class="lc icon-reto"></div><li class="list__item">Montaje y desmontaje de piezas de precisión</li>
 									<div class="lc icon-reto"></div><li class="list__item">Pruebas de arranque de equipos</li>
 								</ul>
@@ -60,30 +68,32 @@
 							<div class="heading">Servicios</div>
 							<div class="content">
 								<ul>
+									<!--
 									<li><a href="soldadura.html">Soldadura y  Paileria</a></li>
-									<li><a href="mantenimiento.hmtl">Mantenimiento Preventivo y Correctivo</a></li>
-									<li><a href="personal.html">Personal por administracion</a></li>
-									<li><a href="diseno.html">Diseño y Desarrollo de proyectos</a></li>
-									<li><a href="instalacionesElectricas.html">Instalaciónes Electricas Mediana Tensión</a></li>
-									<li><a href="obraCivil.html">Proyectos de Obra Civil</a></li>
-									<li><a href="fabricacion.html">Fabricación y Maquilado de piezas</a></li>
-									<li><a href="serviciosAdicionales.html">Servicios Adicionales</a></li>
+									-->
+									<li><a href="soldadura.html" class="link">Soldadura y Paileria</a></li>
+									<li><a href="personal.html" class="link">Personal por administracion</a></li>
+									<li><a href="diseno.html" class="link">Diseño y Desarrollo de proyectos</a></li>
+									<li><a href="instalacionesElectricas.html" class="link">Instalaciónes Electricas Mediana Tensión</a></li>
+									<li><a href="obraCivil.html" class="link">Proyectos de Obra Civil</a></li>
+									<li><a href="fabricacion.html" class="link">Fabricación y Maquilado de piezas</a></li>
+									<li><a href="serviciosAdicionales.html" class="link">Servicios Adicionales</a></li>
 								</ul>
 							</div>
 						</section>
 						<section>
-							<div class="heading">Trabajos Realizados</div>
+							<div class="heading negro">Trabajos Realizados</div>
 							<div class="content">
 								<table border="0px">
 									<tr>
-										<td><img src="images/soldadura.jpg" style="width:75px; height:75px;"/></td>
-										<td><img src="images/soldadura.jpg" style="width:75px; height:75px;"/></td>
-										<td><img src="images/soldadura.jpg" style="width:75px; height:75px;"/></td>
+										<td><a href="img/mant/2.jpg" data-lightbox="mant"><img src="img/mant/2.jpg" style="width:75px; height:75px;"/></a></td>
+										<td><a href="img/mant/1.jpg" data-lightbox="mant"><img src="img/mant/1.jpg" style="width:75px; height:75px;"/></a></td>
+										<td><a href="img/mant/4.jpg" data-lightbox="mant"><img src="img/mant/4.jpg" style="width:75px; height:75px;"/></a></td>
 									</tr>
 									<tr>
-										<td><img src="images/soldadura.jpg" style="width:75px; height:75px;"/></td>
-										<td><img src="images/soldadura.jpg" style="width:75px; height:75px;"/></td>
-										<td><img src="images/soldadura.jpg" style="width:75px; height:75px;"/></td>
+										<td><a href="img/mant/5.jpg" data-lightbox="mant"><img src="img/mant/5.jpg" style="width:75px; height:75px;"/></a></td>
+										<td><a href="img/mant/6.jpg" data-lightbox="mant"><img src="img/mant/6.jpg" style="width:75px; height:75px;"/></a></td>
+										<td><a href="img/mant/7.jpg" data-lightbox="mant"><img src="img/mant/7.jpg" style="width:75px; height:75px;"/></a></td>
 									</tr>
 								</table>
 							</div>
