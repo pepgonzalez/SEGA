@@ -20,5 +20,8 @@ function sendEmail(){
 		alert("Por favor complete todos los campos!");
 	}else{
 		alert("Gracias por sus comentarios, en breve nos pondremos en contacto con usted.");
+		nombre.style.border = "none";
+		correo.style.border = "none";	
+		comments.style.border = "none";
 	}
 }
