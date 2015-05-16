@@ -1,11 +1,24 @@
 function sendEmail(){
 
-	var n = document.getElementById("js-nombre");
-	var nombre = n.value;
-	if (nombre.length == 0){
-		n.style.color = "red";
+	var nombre = document.getElementById("js-nombre");
+	var correo  = document.getElementById("js-correo");
+	var comments = document.getElementById("js-comments");
+	var t_nombre = nombre.value;
+	var t_correo = correo.value;
+	var t_comments = comments.value;
+
+	if (t_nombre.length == 0){
+		nombre.style.border = "solid red 1px";
 	}
-	var correo = document.getElementById("js-correo").value;
-	var comentarios = document.getElementById("js-comments").value;
-	alert("Correo enviado: " + nombre + " - " + correo + " - " + comentarios );
+	if (t_correo.length == 0){
+		correo.style.border = "solid red 1px";
+	}
+	if (t_comments.length == 0){
+		comments.style.border = "solid red 1px";
+	}
+	if (t_nombre.length == 0 || t_correo.length == 0 || t_comments.length == 0){
+		alert("Por favor complete todos los campos!");
+	}else{
+		alert("Gracias por sus comentarios, en breve nos pondremos en contacto con usted.");
+	}
 }
