@@ -1,8 +1,3 @@
-$(window).load(function() {
-		// Animate loader off screen
-	$("loader").fadeOut("slow");;
-});
-
 function sendEmail(){
 
 	var n = document.getElementById("js-nombre");
